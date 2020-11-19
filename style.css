@@ -1,0 +1,181 @@
+html {
+  height: 100%;
+  min-width: 100%;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  margin-left: 0px;
+  background-image: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80");
+  background-repeat: no-repeat;
+  max-height: 100%;
+  min-width: 100%;
+}
+
+h1 {
+  color: white;
+  margin-left: 6%;
+  margin-top: 20%;
+  margin-bottom: -2px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 60px;
+  font-weight: 1;
+}
+
+#nameheader {
+  margin-top: 25%;
+ }
+
+h2 {
+  color: white;
+  margin-left: 6%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 1;
+  padding-bottom: 10%;
+}
+
+#navbar {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 1%;
+}
+
+#navbar li {
+  display: inline-flex;
+  justify-content: center;
+  margin: auto; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  opacity: 1;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+#aboutheader {
+  font-size: 30px;
+}
+
+#about p {
+  margin-left: 6%;
+  margin-right: 28%;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 1;
+}
+
+#about {
+  padding-bottom: 8%;
+}
+
+#calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #pandas {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0.5%;
+  width: 400px;
+  height: 265px;
+}
+
+.row {
+  display: float;
+  margin: auto;
+  width: 95%;
+  text-align: center;
+}
+
+#contactheader {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+#survey-section {
+  height: 100%;
+}
+
+#survey-form {
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 1;
+  padding-bottom: 5%;
+  padding-top: 0%;
+}
+
+.form-control{ 
+  margin: auto;
+  display: block;
+  border: 2%;
+  margin-top: 0.5%;
+  margin-bottom: 1.5%;
+  text-align: left;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 1;
+  width: 30%;
+  height: 10%;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5%;
+}
+
+.input-textarea {
+  height: 120px;
+  width: 30%;
+  margin: auto;
+  resize: vertical;
+  margin-left: 0.5%;
+  margin-top: 2%;
+  background-color: white;
+  font-family: 'Rubik', sans-serif;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1%;
+}
+
+.submit-button {
+  display: block;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5%;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
