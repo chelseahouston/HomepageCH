@@ -14,7 +14,7 @@ body {
 
 h1 {
   color: white;
-  margin-left: 6%;
+  margin-left: 8%;
   margin-top: 20%;
   margin-bottom: -2px;
   font-family: 'Rubik', sans-serif;
@@ -23,16 +23,17 @@ h1 {
 }
 
 #nameheader {
+  max-width: 30%;
   margin-top: 25%;
  }
 
 h2 {
   color: white;
-  margin-left: 6%;
+  margin-left: 8%;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 1;
-  padding-bottom: 10%;
+  max-width: 30%;
 }
 
 #navbar {
@@ -70,21 +71,50 @@ a {
   justify-content: space-around;
 }
 
+a:hover {
+  color: rgb(190, 151, 35);
+}
+
+.fa {
+  display: float;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  margin-left: 94%;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  opacity: 0.7;
+}
+
+.fa:hover {
+  color: rgb(190, 151, 35);
+}
+
+#profiles {
+  display: float;
+  font-size: 55px;
+  margin-top: -5%;
+  }
+
 #aboutheader {
   font-size: 30px;
+  margin-top: 12%;
 }
 
 #about p {
-  margin-left: 6%;
+  margin-left: 8%;
   margin-right: 28%;
   color: white;
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   font-weight: 1;
+  max-width: 50%;
 }
 
 #about {
-  padding-bottom: 8%;
+  padding-bottom: 2%;
 }
 
 #calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #pandas {
@@ -121,7 +151,7 @@ a {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 1;
-  padding-bottom: 5%;
+  padding-bottom: 1.4%;
   padding-top: 0%;
 }
 
@@ -177,4 +207,8 @@ a {
   margin-right: auto;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+.submit-button:hover {
+  background-color: rgb(190, 151, 35);
 }
