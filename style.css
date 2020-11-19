@@ -72,7 +72,7 @@ a {
 }
 
 a:hover {
-  color: rgb(190, 151, 35);
+  color: rgb(236, 183, 25);
 }
 
 .fa {
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .fa:hover {
-  color: rgb(190, 151, 35);
+  color: rgb(236, 183, 25);
 }
 
 #profiles {
@@ -210,5 +210,5 @@ a:hover {
 }
 
 .submit-button:hover {
-  background-color: rgb(190, 151, 35);
+  color: rgb(236, 183, 25);
 }
