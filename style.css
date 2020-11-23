@@ -1,3 +1,6 @@
+/* COLOR CODES:
+  YELLOW/ORANGE: color: rgb(236, 183, 25); */
+
 html {
   height: 100%;
   min-width: 100%;
@@ -7,33 +10,45 @@ body {
   background-position: center;
   background-size: cover;
   margin-left: 0px;
-  background-image: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80");
+  background-image: url("https://images.unsplash.com/photo-1527600478564-488952effedb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
   max-height: 100%;
   min-width: 100%;
 }
 
+#welcome-section {
+  background-color: black;
+  opacity: 0.7;
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  max-width: 52%;
+  padding: 0.3%;
+}
+
 h1 {
   color: white;
+  text-shadow: 2px 2px black;
   margin-left: 8%;
-  margin-top: 20%;
-  margin-bottom: -2px;
+  margin-bottom: 20px;
   font-family: 'Rubik', sans-serif;
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 1;
 }
 
 #nameheader {
-  max-width: 30%;
-  margin-top: 25%;
+  max-width: 60%;
+  margin-top: 16%;
  }
 
 h2 {
-  color: white;
+  color: rgb(236, 183, 25);
   margin-left: 8%;
+  margin-bottom: 40px;
   font-family: 'Rubik', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 1;
-  max-width: 30%;
+  max-width: 90%;
+  text-shadow: 2px 2px black;
 }
 
 #navbar {
@@ -41,7 +56,7 @@ h2 {
   height: auto;
   margin: auto;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
   border-radius: 1%;
 }
 
@@ -55,13 +70,14 @@ h2 {
   padding-right: 30px;
 }
 
-ul {
+#navbar ul {
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
   color: white;
   font-size: 18px;
   text-align: center;
   opacity: 1;
+  text-shadow: 2px 2px black;
 }
 
 a {
@@ -73,34 +89,42 @@ a {
 
 a:hover {
   color: rgb(236, 183, 25);
+  text-shadow: 1px 1px black;
 }
 
 .fa {
   display: float;
-  text-align: right;
   text-decoration: none;
   border-radius: 50%;
   color: white;
-  margin-left: 94%;
-  margin-bottom: 2px;
-  padding-top: 5px;
-  padding-bottom: 20px;
   opacity: 0.7;
-}
+  text-shadow: 2px 2px black;
+  }
 
 .fa:hover {
   color: rgb(236, 183, 25);
+  text-shadow: 1px 1px black;
 }
 
-#profiles {
-  display: float;
-  font-size: 55px;
-  margin-top: -5%;
-  }
+#profilescontact li, #profileshome li{
+  max-width: 30%;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: auto;
+  padding: 2%;
+}
+
+#profilescontact ul, #profileshome ul {
+  list-style-type: none;
+  text-align: center;
+}
 
 #aboutheader {
   font-size: 30px;
   margin-top: 12%;
+  color: rgb(236, 183, 25);
 }
 
 #about p {
@@ -110,11 +134,39 @@ a:hover {
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   font-weight: 1;
-  max-width: 50%;
+  text-shadow: 1px 1px black;
 }
 
 #about {
   padding-bottom: 2%;
+  padding-top: 1%;
+  margin-top: 5%;
+  margin-left: 8%;
+  max-width: 40%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#chelseaimg {
+  display: float;
+  margin-left: 62%;
+  width: 20%;
+  height: auto;
+  margin-top: -45%;
+  border-color: white;
+  border-style: solid;
+  border-width: 7px;
+  padding: 15px;
+}
+
+#project-section {
+  background-color: black;
+  opacity: 0.7;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 #calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #pandas {
@@ -138,11 +190,19 @@ a:hover {
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 30px;
+  color: rgb(236, 183, 25);
 }
 
 #survey-section {
-  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  width: 50%;
+  height: auto;
+  padding-top: 0.5%;
 }
 
 #survey-form {
@@ -151,8 +211,8 @@ a:hover {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   font-weight: 1;
-  padding-bottom: 1.4%;
-  padding-top: 0%;
+  padding-bottom: 2%;
+  padding-top: 1%;
 }
 
 .form-control{ 
@@ -166,7 +226,7 @@ a:hover {
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   font-weight: 1;
-  width: 30%;
+  width: 50%;
   height: 10%;
   border-color: black;
   border-style: solid;
@@ -176,7 +236,7 @@ a:hover {
 
 .input-textarea {
   height: 120px;
-  width: 30%;
+  width: 50%;
   margin: auto;
   resize: vertical;
   margin-left: 0.5%;
@@ -195,9 +255,9 @@ a:hover {
   background-color: black;
   opacity: 0.5;
   color: white;
-  border-color: black;
+  border-color:  rgb(236, 183, 25);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 5%;
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
@@ -206,9 +266,11 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 5%;
+  text-shadow: 1px 1px black;
 }
 
 .submit-button:hover {
   color: rgb(236, 183, 25);
+  text-shadow: 1px 1px black;
 }
