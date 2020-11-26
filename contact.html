@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-
-<!-- START CSS LINK -->
+<html>
+<!-- START HEAD -->
+<head>
+<!-- META TAGS -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<!-- CSS -->
 <link rel="stylesheet" href="style.css">
-<!-- END CSS LINK -->
-
-<!-- START SOCIAL LOGO STYLESHEET LINK -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- END SOCIAL LOGO STYLESHEET LINK -->
-
-<!-- START GOOGLE FONT LINKS -->
+<!-- FONT AWESOME STYLESHEET -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-<!-- END GOOGLE FONT LINKS -->
-
 <!-- TITLE -->
-<title>Chelsea Houston - Contact</title>
-<!-- END TITLE -->
+<title>Contact</title>
+<!-- START CONTAINER-FLUID DIV (BS)-->
+<div class="container-fluid">
+</head>
+<!-- END HEAD -->
 
-<head>
-	<!-- START HEAD -->
 	<!-- START NAV -->
 	<nav id="navbar" class="nav-bar">
 		<ul class="nav-list">
@@ -26,31 +27,24 @@
 			<li class="navitem navabout"><a href="about.html">About</a></li>
 			<li class="navitem navproject"><a href="projects.html">Projects</a></li>
 			<li class="navitem navcontact"><a href="contact.html" style="color: rgb(236, 183, 25)">Contact</a></li>
+      <li class="navitem navlogin"><a href="login.html">Log In</a></li>
 		</ul>
 	</nav>
 	<!-- END NAV -->
-	<section id="contact-section" name="contact">
-</head>
-<!-- END HEAD -->
 
 <!-- START CONTACT SECTION -->
 <div id="survey-section">
-  		<h1 id="contactheader">Contact</h1>
-	<form id="survey-form">
+  <h1 id="contactheader">Contact</h1>
+  <form id="survey-form">
 		<form>
-
 			<label for="name" id="name-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
 
         <label for="email" id="email-label">Email</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="Email" required />
 
-        <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message...">
-</textarea>
-
-        <button type="submit" id="submit" class="submit-button">
-          Submit
-        </button>
+        <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message..."></textarea>
+        <button type="button" class="submit-button" id="submit" onclick="myFunction()">Submit</button>
       </form>
     </section>
   </form>
@@ -60,17 +54,17 @@
 <!-- START PROFILES SECTION -->
 <section id="profilescontact">
   <ul>
-	<!-- GITHUB -->
-	<li><a href="https://github.com/chelseahouston" target="_blank" class="fa fa-github" title="GitHub"></a></li>
-	<!-- INSTAGRAM -->
-	<li><a href="https://www.instagram.com/codingandveggies/?hl=en" target="_blank" class="fa fa-instagram" title="Instagram"></a></li>
-	<!-- LINKEDIN -->
-	<li><a href="https://www.linkedin.com/in/chelsea-houston/" target="_blank" class="fa fa-linkedin" title="LinkedIn" "></a></li>
+	<!-- GITHUB --> <li><a href="https://github.com/chelseahouston" target="_blank" class="fab fa-github" title="GitHub"></a></li>
+	<!-- INSTAGRAM --> <li><a href="https://www.instagram.com/codingandveggies/?hl=en" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+	<!-- LINKEDIN --> <li><a href="https://www.linkedin.com/in/chelsea-houston/" target="_blank" class="fab fa-linkedin" title="LinkedIn" "></a></li>
   </ul>
   <!-- END PROFILES SECTION -->
-</section>
 
+<!-- JS -->
+<script src="script.js"></script>
 <!-- END BODY -->
 </body>
+<!-- END CONTAINER-FLUID DIV -->
+</div>
 <!-- END HTML -->
 </html>

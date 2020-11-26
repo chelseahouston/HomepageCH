@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 <!-- TITLE -->
-<title>Chelsea Houston - Home</title>
+<title>Log In</title>
 <!-- START CONTAINER-FLUID DIV (BS)-->
 <div class="container-fluid">
 </head>
@@ -23,32 +23,33 @@
 	<!-- START NAV -->
 	<nav id="navbar" class="nav-bar">
 		<ul class="nav-list">
-			<li class="navitem navtop"><a href="index.html" style="color: rgb(236, 183, 25)">Home</a></li>
+			<li class="navitem navtop"><a href="index.html">Home</a></li>
 			<li class="navitem navabout"><a href="about.html">About</a></li>
 			<li class="navitem navproject"><a href="projects.html">Projects</a></li>
 			<li class="navitem navcontact"><a href="contact.html">Contact</a></li>
-      <li class="navitem navlogin"><a href="login.html">Log In</a></li>
+      <li class="navitem navlogin"><a href="login.html" style="color: rgb(236, 183, 25)">Log In</a></li>
 		</ul>
 	</nav>
 	<!-- END NAV -->
 
-	<!-- START WELCOME SECTION -->
-	<section id="welcome-section" name="welcome">
+<!-- START LOG IN SECTION -->
+<div id="login-section">
+    <h1 id="loginheader">Log In</h1>
+    <h4>Log into your account</h2>
+  <form id="survey-form">
+		<form>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required />
 
-		<h1 id="nameheader">Chelsea Houston</h1>
-		<h2>Design & Development of bespoke Websites & Applications</h2>
+        <label for="password" id="password-label">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required />
 
-	</section>
-<!-- END WELCOME SECTION --->
-
-<!-- START PROFILES SECTION -->
-<section id="profileshome">
-  <ul>
-	<!-- GITHUB --> <li><a href="https://github.com/chelseahouston" target="_blank" class="fab fa-github" title="GitHub"></a></li>
-	<!-- INSTAGRAM --> <li><a href="https://www.instagram.com/codingandveggies/?hl=en" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
-	<!-- LINKEDIN --> <li><a href="https://www.linkedin.com/in/chelsea-houston/" target="_blank" class="fab fa-linkedin" title="LinkedIn" "></a></li>
-  </ul>
-  <!-- END PROFILES SECTION -->
+        <button type="submit" id="submit" class="submit-button">Log In</button>
+      </form>
+    </section>
+  </form>
+</div>
+<!-- END  LOG IN SECTION -->
 
 <!-- JS -->
 <script src="script.js"></script>
