@@ -35,8 +35,8 @@
 <!-- START LOG IN SECTION -->
 <div id="login-section">
     <h1 id="loginheader">Log In</h1>
-    <h4>Log into your account</h2>
-  <form id="survey-form">
+    <h4 id="loginsub">Log into your account</h2>
+  <form id="login-form">
 		<form>
         <label for="email" id="email-label">Email</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="Email" required />
@@ -44,15 +44,33 @@
         <label for="password" id="password-label">Password</label>
         <input type="password" name="password" class="form-control" placeholder="Password" required />
 
-        <button type="submit" id="submit" class="submit-button">Log In</button>
+        <button type="submit" id="submit" class="submit-button" name="submit" onclick="return validateForm()">Log In</button>
       </form>
     </section>
   </form>
+
+<!-- JS -->
+<script>
+  function validateForm() {
+  var a = document.forms["login-form"]["email"].value;
+  var b = document.forms["login-form"]["password"].value;
+  if (a == null || a == "", b == null || b == "") {
+    alert("Please fill all required fields");
+    return false;
+  }
+  else {
+    document.getElementById("loginheader").innerHTML = "Welcome to your Account";
+    document.getElementById("loginsub").innerHTML = "We are adding new things all the time so check back soon!";
+    var element01 = document.getElementById("login-form");
+    element01.parentNode.removeChild(element01);
+  }
+}
+</script>
+<!-- END JS -->
+
 </div>
 <!-- END  LOG IN SECTION -->
 
-<!-- JS -->
-<script src="script.js"></script>
 <!-- END BODY -->
 </body>
 <!-- END CONTAINER-FLUID DIV -->
