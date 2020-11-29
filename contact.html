@@ -33,21 +33,25 @@
 	<!-- END NAV -->
 
 <!-- START CONTACT SECTION -->
-<div id="survey-section">
+<div id="contact-section">
+
   <h1 id="contactheader">Contact</h1>
-  <form id="survey-form">
-		<form>
+
+  <form id="contact-form">
+
 			<label for="name" id="name-label">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+        <input type="text" class="form-control" id="namefield" name="namefield" required />
 
         <label for="email" id="email-label">Email</label>
-        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required />
+        <input type="email" name="emailfield" class="form-control" id="emailfield" required />
 
-        <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message..."></textarea>
-        <button type="button" class="submit-button" id="submit" onclick="myFunction()">Submit</button>
+        <textarea id="messagefield" class="input-textarea" name="messagefield"></textarea>
+        <button type="button" class="submit-button" name="submit" id="submit" onsubmit="return validateForm()"">Submit</button>
+
       </form>
+
     </section>
-  </form>
+
 </div>
 <!-- END  CONTACT SECTION -->
 
