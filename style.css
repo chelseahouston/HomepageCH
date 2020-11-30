@@ -150,21 +150,17 @@ a:hover {
   padding-top: 1%;
   margin-top: 5%;
   margin-left: 8%;
-  max-width: 40%;
   background-color: black;
   opacity: 0.7;
 }
 
 #chelseaimg {
-  display: float;
-  margin-left: 62%;
-  width: 20%;
   height: auto;
-  margin-top: -34%;
   border-color: white;
   border-style: solid;
   border-width: 7px;
   padding: 15px;
+  margin-top: 10%;
 }
 
 #project-section {
@@ -276,4 +272,186 @@ a:hover {
   color: black;
   text-shadow: 1px 1px black;
   background-color: white;
+}
+
+
+/* --- RESPONSIVE CSS FOR DIFFERENT SCREEN SIZES --- */
+
+/* --- SMARTPHONES PORTRAIT --- */
+@media screen and (max-width: 670px) and (orientation: portrait) {
+  html {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #navbar {
+    height: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #navbar li {
+    display: inline-flex;
+    justify-content: center;
+    margin: auto; 
+    padding-top: auto;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  ul {
+    font-size: 15px;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    max-width: 90%;
+    margin-top: 10%;
+    padding-top: 5%;
+  }
+
+  h2 {
+    font-size: 15px;
+    text-align: center;
+    max-width: 90%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  p {
+    font-size: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  #about {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-bottom: 5%;
+  }
+
+  .container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #chelseaimg {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #welcome-section {
+    min-width: 90%;
+    max-width: 100vh;
+    height: auto;
+    margin-top: 25%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ #contact-section, #login-section {
+    width: 100%;
+    height: auto;
+    margin-top: 25%;
+    text-align: center;
+  }
+
+  #contact-form, #login-form {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .form-control {
+    width: 80%;
+    text-align: center;
+  }
+
+  .input-textarea {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .submit-button {
+    width: 40%;
+    text-align: center;
+  }
+
+  #project-section {
+    margin-top: 25%;
+    margin-bottom: 20%;
+  }
+
+  #calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #pandas {
+    margin-bottom: 10%;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media screen and (min-width: 100px) and (orientation: landscape) {
+  body {
+   padding: 0;
+  }
+  
+  #navbar {
+    height: 70px;
+    justify-content: flex-start;
+  }
+  
+  ul {
+    font-size: 25px;
+  }
+
+  h1 h2 {
+    font-size: 2rem;
+  }
+  
+  .form-control {
+    width: 50%;
+  }
+  
+  .input-textarea {
+    width: 50%;
+  }
+
+  .submit-button {
+    width: 20%;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 480px) and (orientation: portrait) {
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+
+  .nav-bar {
+    height: 70px;
+    justify-content: flex-start;
+  }
 }
