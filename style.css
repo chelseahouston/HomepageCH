@@ -494,3 +494,94 @@ ul#aboutlist li {
 }
 
 /* --- SMARTPHONES LANDSCAPE --- */
+@media only screen and (min-width : 321px) {
+  /* ---------- html, body --- */
+  html {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0px auto;
+    margin: 0px auto;
+    height: 100%;
+    min-width: 100%;
+  }
+
+  /* ---------- navigation --- */
+  #navbar {
+    min-width: 100%;
+  }
+
+  ul#nav-list li {
+    font-size: 16px;
+  }
+
+  /* ---------- welcome section / landing page --- */
+  #welcome-section {
+    min-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+  }
+
+  /* ---------- h1, h2, h3 ... --- */
+  h1 {
+    min-width: 100%;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------- about section --- */
+  #about {
+    width: 100%;
+  }
+  
+  #aboutlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #aboutpara {
+    min-width: 100%;
+    margin-left: auto;
+  }
+
+  #about p {
+    min-width: 100%;
+  }
+
+  #chelseaimg {
+    width: 200px;
+    height: auto;
+  }
+
+  /* ---------- projects section --- */
+  #project-section {
+    min-width: 100%;
+  }
+
+  #calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #pandas {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* ---------- contact section --- */
+  #contact-section {
+    min-width: 90%;
+  }
+}
