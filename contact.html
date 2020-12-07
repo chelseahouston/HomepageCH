@@ -45,7 +45,6 @@
     <textarea name="message" class="form-control" class="input-textarea"></textarea></label>
     <button type="submit" class="submit-button" onclick="return validateForm()">Submit</button>
 </form>
-</div>
 
 <!-- JS -->
 <script>
@@ -64,6 +63,7 @@
     }
     else {
       alert("Submission cancelled");
+      return false;
     }
   }
 }
