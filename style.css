@@ -1,5 +1,5 @@
 /* ---------- COLOR CODES:
-  YELLOW/ORANGE: color: rgb(236, 183, 25); --- */
+ RED: color: rgb(236, 14, 14); --- */
 
 /* ---------- html, body --- */
 html {
@@ -50,7 +50,6 @@ h2 {
   font-size: 16px;
   font-weight: 1;
   max-width: 100%;
-  text-shadow: 2px 2px rgb(236, 183, 25);
   text-align: center;
 }
 
@@ -121,13 +120,12 @@ a:hover {
   display: float;
   text-decoration: none;
   border-radius: 50%;
-  color: rgb(236, 183, 25);
+  color: black;
   opacity: 0.8;
-  text-shadow: 2px 2px black;
   }
 
 .fab:hover {
-  color: white;
+  color: rgb(236, 183, 25);
   text-shadow: 1px 1px black;
 }
 
