@@ -43,7 +43,7 @@
     <input type="email" class="form-control" name="email" placeholder="Email"/>
     <label>Message</label> 
     <textarea name="message" class="form-control" class="input-textarea"></textarea></label>
-    <button type="submit" class="submit-button" onclick="validateForm()">Submit</button>
+    <button type="submit" class="submit-button" onclick="return validateForm()">Submit</button>
 </form>
 </div>
 
@@ -64,7 +64,6 @@
     }
     else {
       alert("Submission cancelled");
-      reset();
     }
   }
 }
