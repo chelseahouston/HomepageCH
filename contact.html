@@ -48,7 +48,6 @@
 
 <!-- JS -->
 <script>
-<input type="hidden" name="contact-form" value="contact-form" />
 
   function validateForm() {
   var a = document.forms["contact-form"]["sender"].value;
@@ -61,9 +60,6 @@
   else if (c == null || c == "") {
     if (confirm("Your message is blank, do you still wish to submit?")) {
       alert("Form submitted");
-      document.getElementById("contactheader").innerHTML = "Thank you for your message.";
-      var element = document.getElementById("contact-form");
-      element.parentNode.removeChild(element);
       document.getElementById('contact-form').submit();
     }
     else {
@@ -71,9 +67,6 @@
     }
   }
   else {
-    document.getElementById("contactheader").innerHTML = "Thank you for your message.";
-    var element = document.getElementById("contact-form");
-    element.parentNode.removeChild(element);
     document.getElementById('contact-form').submit();
   }
 }
