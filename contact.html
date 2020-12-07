@@ -34,20 +34,18 @@
 	</div>
 	<!-- end navigation -->
 
-<!-- contact form -->
 <div id="contact-section">
   <h1 id="contactheader">Contact</h1>
 <form name="contact-form" id="contact-form" method="POST" data-netlify="true">
-<input type='hidden' name='form-name' value='contact' />
-		<label for="name" id="name-label">Name *</label>
-    <input type="text" class="form-control" id="sender" name="sender" placeholder="Name"/>
-    <label for="email" id="email-label">Email *</label>
-    <input type="email" name="senderEmail" class="form-control" id="senderEmail" placeholder="Email"/>
-    <textarea id="message" class="input-textarea" name="message"></textarea>
-    <button type="submit" class="submit-button" id="submit">Submit</button>
+    <label>*Name
+    <input type="text" name="name" placeholder="Name"/></label> 
+    <label>*Email
+    <input type="email" name="email" placeholder="Email"/></label>
+    <label>Message
+    <textarea name="message" class="input-textarea"></textarea></label>
+    <button type="submit" class="submit-button">Submit</button>
 </form>
 </div>
-
 
 <!-- JS
 <script>
