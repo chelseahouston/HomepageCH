@@ -2,42 +2,45 @@
 <html>
 <!-- start html -->
 <!-- start head -->
+
 <head>
-<!-- meta -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<!-- bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- font awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-<!-- title -->
-<title>Contact</title>
-<!-- start container fluid div (BS)-->
-<div class="container-fluid">
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	 crossorigin="anonymous">
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<!-- title -->
+	<title>Contact</title>
+	<!-- start container fluid div (BS)-->
+	<div class="container-fluid">
 </head>
 <!-- end head -->
 
-	<!-- start navigation -->
-	<div id="navbar" class="nav-bar">
-		<ul id="nav-list">
-			<li class="navitem navtop"><a href="index.html">Home</a></li>
-			<li class="navitem navabout"><a href="index.html#about">About</a></li>
-			<li class="navitem navproject"><a href="projects.html">Projects</a></li>
-			<li class="navitem navcontact"><a href="contact.html" style="color: rgb(236, 183, 25)">Contact</a></li>
-		</ul>
-	</div>
-	<!-- end navigation -->
+<!-- start navigation -->
+<div id="navbar" class="nav-bar">
+	<ul id="nav-list">
+		<li class="navitem navtop"><a href="index.html">Home</a></li>
+		<li class="navitem navabout"><a href="index.html#about">About</a></li>
+		<li class="navitem navproject"><a href="projects.html">Projects</a></li>
+		<li class="navitem navcontact"><a href="contact.html" style="color: rgb(236, 183, 25)">Contact</a></li>
+	</ul>
+</div>
+<!-- end navigation -->
 
 <div id="contact-section">
-  <h1 id="contactheader">Contact</h1>
-<form name="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-    <label>Name *</label> 
+	<h1 id="contactheader">Contact</h1>
+	<form name="contact-form" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		<label>Name *</label> 
     <input type="text" class="form-control" name="name" placeholder="Name"/>
     <label>Email *</label> 
     <input type="email" class="form-control" name="email" placeholder="Email"/>
@@ -47,27 +50,23 @@
 </form>
 
 <!-- JS -->
-<script>
+<script> 
   function validateForm() {
-  var a = document.forms["contact-form"]["name"].value;
-  var b = document.forms["contact-form"]["email"].value;
-  var c = document.forms["contact-form"]["message"].value;
-  if (a == null || a == "", b == null || b == "") {
-    alert("Please fill all required fields");
-    return false;
-  }
-  else if (c == null || c == "") {
-    if (confirm("Your message is blank, do you still wish to submit?")) {
-      alert("Form submitted");
-
-    }
-    else {
-      alert("Submission cancelled");
+    var a = document.forms["contact-form"]["name"].value;
+    var b = document.forms["contact-form"]["email"].value;
+    var c = document.forms["contact-form"]["message"].value;
+    if (a == null || a == "", b == null || b == "") {
+      alert("Please fill all required fields");
       return false;
     }
-  else {
-    return true();
-  }
+    else if (c == null || c == "") {
+      if (confirm("Your message is blank, do you still wish to submit?")) {
+        alert("Form submitted");
+        }
+      else {
+        alert("Submission cancelled");
+        return false;
+    }
   }
 }
 </script>
