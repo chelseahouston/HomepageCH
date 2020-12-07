@@ -60,6 +60,7 @@
   else if (c == null || c == "") {
     if (confirm("Your message is blank, do you still wish to submit?")) {
       alert("Form submitted");
+      document.getElementById('contact-form').form.submit();
       document.getElementById("contactheader").innerHTML = "Thank you for your message.";
       var element = document.getElementById("contact-form");
       element.parentNode.removeChild(element);
@@ -69,6 +70,7 @@
     }
   }
   else {
+    document.getElementById('contact-form').form.submit();
     document.getElementById("contactheader").innerHTML = "Thank you for your message.";
     var element = document.getElementById("contact-form");
     element.parentNode.removeChild(element);
