@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   margin-left: 0px;
-  background-image: url("https://images.unsplash.com/photo-1527600478564-488952effedb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-image: url("https://images.unsplash.com/photo-1490131784822-b4626a8ec96a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   height: 100%;
   width: 100%;
 }
@@ -57,7 +57,7 @@ h4 {
   height: auto;
   margin-top: 10px; 
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 1%;
 }
 
@@ -96,7 +96,7 @@ a:hover {
 /* ---------- welcome section / landing page --- */
 #welcome-section {
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   margin-left: 5%;
   margin-top: 10%;
   margin-bottom: 7%;
@@ -109,13 +109,13 @@ a:hover {
   display: float;
   text-decoration: none;
   border-radius: 50%;
-  color: white;
-  opacity: 0.7;
+  color: rgb(236, 183, 25);
+  opacity: 0.8;
   text-shadow: 2px 2px black;
   }
 
 .fab:hover {
-  color: rgb(236, 183, 25);
+  color: white;
   text-shadow: 1px 1px black;
 }
 
@@ -168,7 +168,7 @@ ul#hlist li, ul#plist li {
   height: auto;
   margin-top: 20px; 
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 1%;
 }
 
@@ -201,6 +201,7 @@ ul#aboutlist li {
   border-width: 4px;
   padding: 4px;
   border-color: white;
+  opacity: 1;
 }
 
 /* ---------- projects --- */
@@ -234,7 +235,7 @@ ul#aboutlist li {
 
 #contact-section {
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
@@ -309,7 +310,7 @@ ul#aboutlist li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   text-shadow: 1px 1px black;
 }
 
@@ -319,10 +320,10 @@ ul#aboutlist li {
   background-color: white;
 }
 
+/* --------------------------------- R E S P O N S I V E ---- C S S ---- M O B I L E ---- T A B L E T ------------------------------------------------ */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* -------------------------------------- RESPONSIVE CSS FOR DIFFERENT SCREEN SIZES ---------------------------------------------------------- */
-
-/* --- SMARTPHONES PORTRAIT --- */
+/* ------------------------------------------------ SMARTPHONES PORTRAIT --- */
 @media screen and (min-width: 100px) and (max-width: 670px) and (orientation: portrait) {
   /* ---------- html, body --- */
   html {
@@ -509,8 +510,8 @@ ul#aboutlist li {
   }
 }
 
-/* --- SMARTPHONES LANDSCAPE --- */
-@media only screen and (min-width : 321px) and (max-width: 700px) {
+/* ----------------------------------------------------- SMARTPHONES LANDSCAPE --- */
+@media only screen and (min-width : 321px) and (max-width: 800px) {
   /* ---------- html, body --- */
   html {
     max-width: 100%;
@@ -602,4 +603,71 @@ ul#aboutlist li {
   }
 }
 
-/
+/* ----------------------------------------------- TABLET PORTRAIT --- */
+@media only screen and (min-width: 670px ) and (orientation: portrait) {
+  /* ---------- html, body --- */
+  html {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0px auto;
+    margin: 0px auto;
+    height: 100%;
+    min-width: 100%;
+  }
+
+  /* ---------- navigation --- */
+  #navbar {
+    min-width: 100%;
+  }
+
+   /* ---------- h1, h2, h3 ... --- */
+  h1 {
+    padding-top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h2 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* ---------- welcome section / landing page --- */
+  #welcome-section {
+    min-width: 100%;
+    height: auto;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ---------- profile icons, font awesome --- */
+  #profilescontact li, #profileshome li{
+    display: inline-block;
+    margin: 0px auto;
+    font-size: 25px;
+  }
+
+  #profileshome {
+    margin-top: 10%;
+    margin-bottom: 5% !important;
+  }
+
+  #profilescontact {
+    margin-top: 2%;
+    margin-bottom: 2% !important;
+  }
+
+  /* --- about section --- */
+}
