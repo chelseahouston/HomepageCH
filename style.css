@@ -1,5 +1,5 @@
 /* ---------- COLOR CODES:
- RED: color: rgb(236, 14, 14); --- */
+ ORANGE/YELLOW:  color: rgb(236, 183, 25); --- */
 
 /* ---------- html, body --- */
 html {
@@ -119,12 +119,13 @@ a:hover {
   display: float;
   text-decoration: none;
   border-radius: 50%;
-  color: black;
+  color: rgb(236, 183, 25);
+  text-shadow: 2 2 black;
   opacity: 0.8;
   }
 
 .fab:hover {
-  color: rgb(236, 183, 25);
+  color: white;
   text-shadow: 1px 1px black;
 }
 
