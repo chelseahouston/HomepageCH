@@ -228,13 +228,42 @@ ul#aboutlist li {
 }
 
 #calculator, #joke, #guess, #meals, #rockpaperscissors, #password, #onehundredyears, #grade, #ahcopy {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
   padding: 0.5%;
-  width: 420px;
-  height: 300px;
+  width: 400px;
+  height: 280px;
   object-fit: cover;
 }
+
+#ahcopy:hover {
+  opacity: 0.3;
+}
+#calculator:hover {
+  opacity: 0.3;
+}
+#joke:hover {
+  opacity: 0.3;
+}
+#guess:hover {
+  opacity: 0.3;
+}
+#meals:hover {
+  opacity: 0.3;
+}
+#rockpaperscissors:hover {
+  opacity: 0.3;
+}
+#password:hover {
+  opacity: 0.3;
+}
+#onehundredyears:hover {
+  opacity: 0.3;
+}
+#grade:hover {
+  opacity: 0.3;
+}
+
 
 /* ---------- contact --- */
 #contactheader {
